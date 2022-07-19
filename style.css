@@ -10,6 +10,47 @@ main{
     align-items: center;
 
 }
+/* header style  */
+header{
+    background-color: #562EFF;
+    height: 100px;
+}
+.nav{
+    display: flex;
+}
+.pic{
+    display: flex;
+    margin-left: 22em;
+    margin-top: 1em;
+    margin-right: 28em;
+}
+.name{
+    padding-left: 1em;
+    font-size:20px;
+    color: white;
+}
+.pic img{
+    height: 50px;
+    width: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav li{
+    font-size: 20px;
+    color: white;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+nav ul li img{
+    height: 50px;
+    width: 50px;
+}
+.profile img{
+    margin-top: 1.25em;
+}
+
 
 
 
@@ -19,7 +60,7 @@ main{
 .container{
     background-color: #FFFFFF;
     padding: 30px;
-    margin: 130px 280px 0  280px;
+    margin: 30px 280px 0  280px;
     width: 870px;
     height: 679px;
 }
@@ -83,7 +124,8 @@ main{
     grid-template-columns: repeat(2, 1fr);
     row-gap: 15px;
     column-gap: 10px;
-    margin-bottom: 40px;    
+    margin-bottom: 40px; 
+       
 }
 .blog{
     display: flex;
@@ -118,11 +160,13 @@ main{
     display: flex;
     column-gap: 20px;
     margin-top: 30px;
+    
 
 }
 .latest{
     margin-top: 20px;
     height: 400px;
+    margin-bottom: 50px;
 }
 .latest-course{
     background-color: #FFFFFF;
