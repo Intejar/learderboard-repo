@@ -1,0 +1,209 @@
+/* body style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------
+                                        top-player-style 
+----------------------------------------------------------------------------------------------------------*/
+.container{
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin: 130px 280px 0  280px;
+    width: 870px;
+    height: 679px;
+}
+.container:hover{
+    border: 1px solid coral;
+}
+.container h2:hover{
+    border-bottom: 2px solid rgb(107, 107, 187);
+}
+.title{
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    display: inline;
+    padding-top: 10px;
+
+}
+.top-player{
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    row-gap: 28px;
+    margin-top: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.player h4{
+    font-size: 15px;
+    font-weight: 500px;
+
+}
+.container h4:hover{
+    border-bottom: 2px solid rgb(107, 107, 187);
+    
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player img:hover{
+    border: 2px solid rgb(107, 107, 187);
+    border-radius: 50px;
+}
+.horizontal hr{
+    border:1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+.horizontal hr:hover{
+    border-bottom: 2px solid rgb(107, 107, 187);
+}
+
+
+/* top blog style  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 10px;
+    margin-bottom: 40px;    
+}
+.blog{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 30px;
+    width: 345px;
+    height: 177px;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+.blog img:hover{
+    border: 2px solid blue;
+}
+.content{
+    font-size: 15px;
+}
+.content h2{
+    font-size: 15px;
+}
+.content h4{
+    font-size: 10px;
+
+}
+.content a{
+    text-decoration: none;
+}
+
+/* course style  */
+.learn{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px;
+
+}
+.latest{
+    margin-top: 20px;
+    height: 400px;
+}
+.latest-course{
+    background-color: #FFFFFF;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    height: 290px;
+    width: 250px;
+    padding: 20px 10px 5px 15px;
+}
+.latest-course:hover{
+    border: 2px solid rgb(107, 107, 187);
+}
+.courses img{
+    width: 224px;
+    height: 104px;
+}
+.courses img:hover{
+    border: 2px solid rgb(107, 107, 187);
+
+}
+.course-info h2{
+    font-size: 20px;
+    
+}
+.course-info h4{
+    font-size: 15px;
+    color: rgb(243, 76, 76);
+}
+
+.rating{
+    display: flex;
+    column-gap: 10px;
+}
+.fa-star ,.fa-star-half-stroke{
+    color: gold;
+}
+.fa-clock-rotate-left{
+    color: #FF4A60;
+}
+.clock{
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    padding-left: 6px;
+    padding-right: 4px;
+    border-radius: 20px;
+}
+
+/* media queries */
+
+/* mobile device */
+@media screen and (max-width:688px){
+    .container{
+        width: 100%;
+        margin: 0 10px 5px 10px;
+        height: 100%;
+    }
+    .title{
+        margin-left: 35%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2px;
+        padding: 2em;
+    }
+    .latest{
+        margin-top: 10px;
+    }
+    .learn{
+        display: block;
+    }
+    .latest-course{
+        margin-left: 4em;
+        margin-bottom: 1em;
+    }
+     
+    
+}
